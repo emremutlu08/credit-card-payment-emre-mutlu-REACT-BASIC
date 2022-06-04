@@ -4,6 +4,13 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: rgb(31, 200, 212);
+  background: linear-gradient(
+    135deg,
+    rgb(205, 232, 234) 0%,
+    rgba(158, 191, 193, 0.796) 35%,
+    rgba(148, 192, 196, 0.339) 100%
+  );
 }
 
 a {
@@ -13,4 +20,188 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.CreditCardBody {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 290px;
+  height: 180px;
+  background-color: #e8e8e8;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  animation: mymove 1s 1;
+  background-image: url("./assets/cardImageFront.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.CreditCardBodyBack {
+  background-image: url("./assets/cardImageBack.jpg");
+  align-items: flex-start;
+  justify-content: end;
+}
+
+@keyframes mymove {
+  20% {
+    transform: rotateY(180deg);
+  }
+}
+
+.cardText {
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(37, 37, 37);
+  /* space between letters */
+  letter-spacing: 0.1rem;
+}
+
+.Gap {
+  height: 0.01rem;
+  width: 0.01rem;
+  margin: 0.5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 0.5rem;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-small {
+  width: 3rem;
+}
+
+.w-medium {
+  width: 4rem;
+}
+
+.w-xLarge {
+  width: 10rem;
+}
+
+input {
+  font: inherit;
+  padding: 0.2em 0.5em;
+}
+
+.gridBody {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.submitPosition {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  background-color: #e8e8e8;
+  border-radius: 10px;
+  padding: 0.5rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  height: 50%;
+}
+
+.border {
+  border: 1px dashed #000;
+}
+.notValidBorder {
+  border: 1px dashed rgb(255, 0, 0);
+}
+
+.formattedCardNumber {
+  padding: 0.25rem 0.6rem;
+}
+
+.notValid {
+  color: red;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.center {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.gap-small {
+  gap: 0.5rem;
+}
+
+.expiration {
+  border: 1px solid #bbbbbb;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.expiration input {
+  border: 0;
+}
+
+.w-300 {
+  width: 300px;
+}
+
+.w-200 {
+  width: 200px;
+}
+
+.w-180 {
+  width: 180px;
+}
+
+.w-150 {
+  width: 150px;
+}
+
+*:focus {
+  outline: none;
+}
+
+input {
+  border: 1px solid #bbbbbb;
 }
