@@ -16,8 +16,6 @@ export default function ExpDateInputGroup(props) {
     setState({ ...state, expirationYear: value });
   const onChangeYear = (e) => setExpirationYear(e.target.value);
 
-  console.log(state, "state");
-
   return (
     <span
       className={
